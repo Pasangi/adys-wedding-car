@@ -292,10 +292,10 @@ body::after{z-index:-2}
 
 /* ---------- Wedding script font ---------- */
 /* Menu links in wedding script font */
-nav.links a{font-family:"Great Vibes", cursive;font-size:1.55rem;color:var(--main);transition:color .2s}
+nav.links a{font-family:"Playfair Display", Georgia, serif, cursive;font-size:1.55rem;color:var(--main);transition:color .2s}
 nav.links a:hover{color:var(--gold)}
 :lang(si) nav.links a{font-family:"Noto Sans Sinhala", var(--body);font-size:.95rem}
-h2.display{font-family:"Great Vibes", cursive;font-weight:400;letter-spacing:0;line-height:1.15}
+h2.display{font-family:" Vibes", cursive;font-weight:400;letter-spacing:0;line-height:1.15}
 h2.display{font-size:clamp(2.4rem,6.5vw,3.4rem);color:var(--main)}
 
 /* ---------- Gold heart dividers between sections ---------- */
@@ -326,7 +326,7 @@ main > section::before{
 .invite-card:hover{transform:translateY(-4px) rotate(-.6deg);box-shadow:0 20px 44px rgba(60,20,30,.24)}
 .invite-photo img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:10px}
 .invite-small{display:block;margin-top:16px;font-size:.78rem;font-weight:600;letter-spacing:.25em;text-transform:uppercase;color:var(--gold)}
-.invite-title{display:block;margin:2px 0 12px;font-family:"Great Vibes",cursive;font-size:2.4rem;line-height:1.2;color:var(--main)}
+.invite-title{display:block;margin:2px 0 12px;font-family:" Vibes",cursive;font-size:2.4rem;line-height:1.2;color:var(--main)}
 :lang(si) .invite-small{letter-spacing:.05em}
 :lang(si) .invite-title{font-family:"Noto Serif Sinhala",serif;font-size:1.35rem;margin-top:6px}
 .invite-tap{display:inline-block;margin-bottom:8px;padding:10px 24px;border-radius:999px;background:var(--main);color:var(--main-ink);font-weight:600;animation:tap-glow 2s ease-in-out infinite}
@@ -568,7 +568,7 @@ main > section::before{
 
 /* Big "Congratulations!" */
 .cel-msg{position:absolute;left:50%;top:36%;transform:translate(-50%,-50%);white-space:nowrap;
-  font-family:"Great Vibes",cursive;font-size:clamp(3rem,12vw,5.5rem);color:#FFFFFF;text-shadow:0 4px 20px rgba(0,0,0,.35);
+  font-family:" Vibes",cursive;font-size:clamp(3rem,12vw,5.5rem);color:#FFFFFF;text-shadow:0 4px 20px rgba(0,0,0,.35);
   animation:cel-msg 3.6s cubic-bezier(.2,.8,.2,1) both}
 :lang(si) .cel-msg{font-family:"Noto Serif Sinhala",serif;font-size:clamp(2rem,8vw,3.4rem)}
 @keyframes cel-msg{
@@ -828,3 +828,20 @@ nav.links a.active{color:var(--gold)}
 /* Bigger, taller invitation photo */
 .invite-photo img{aspect-ratio:1/1}
 
+/* Sizes for the readable font */
+nav.links a{font-size:1.05rem;font-style:italic;font-weight:500}
+h1.display{font-size:clamp(2.2rem,6vw,3.4rem);font-weight:600}
+h2.display{font-size:clamp(1.8rem,5vw,2.6rem);font-weight:600}
+@media (max-width:640px){nav.links a{font-size:1.05rem}}
+
+/* ---------- Elegant hero heading ---------- */
+.hero h1,.hero h1.display{
+  font-family:"Cormorant Garamond", Georgia, serif;
+  font-weight:500;
+  font-size:clamp(2.6rem,6.5vw,4.6rem);
+  line-height:1.05;
+  letter-spacing:-.01em;
+  color:var(--ink);
+}
+.hero p{letter-spacing:.02em}
+:lang(si) .hero h1{font-family:"Noto Serif Sinhala", serif;font-size:clamp(1.9rem,5vw,3rem);line-height:1.3}
