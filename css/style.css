@@ -845,3 +845,15 @@ h2.display{font-size:clamp(1.8rem,5vw,2.6rem);font-weight:600}
 }
 .hero p{letter-spacing:.02em}
 :lang(si) .hero h1{font-family:"Noto Serif Sinhala", serif;font-size:clamp(1.9rem,5vw,3rem);line-height:1.3}
+
+/* ---------- One elegant font everywhere (no handwriting font) ---------- */
+:root{--display:"Cormorant Garamond", Georgia, serif}
+h1.display,h2.display,.hero h1,nav.links a,.invite-title,.cel-msg,.brand span,legend,
+.sc-name,.car-body h3,.site-footer strong,.site-footer h4{
+  font-family:"Cormorant Garamond", Georgia, serif;
+  font-style:normal;
+}
+nav.links a{font-size:1.2rem;font-weight:600;letter-spacing:.02em}
+h2.display{font-weight:600;font-size:clamp(2rem,5vw,2.8rem)}
+.invite-title{font-weight:600;font-size:clamp(1.9rem,6vw,2.6rem)}
+.cel-msg{font-weight:600}
