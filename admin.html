@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Owner page – Ady’s Wedding Car</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Manrope:wght@400;500;600;700&family=Noto+Sans+Sinhala:wght@400;500;600;700&family=Noto+Serif+Sinhala:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<meta name="robots" content="noindex">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="images/logo.png" alt="" class="logo" onerror="this.remove()"><span>Ady’s Wedding Car</span></a>
+  </div>
+</header>
+
+<main>
+  <section>
+    <div class="wrap narrow">
+      <div class="admin-head">
+        <h2 class="display">Confirm a booking</h2>
+        <a href="index.html" class="btn btn-ghost btn-small">Back to site</a>
+      </div>
+      <p class="lede">Paste the customer’s WhatsApp booking message, add the fee, then send the confirmation and invoice.</p>
+
+      <div class="card">
+        <fieldset>
+          <legend class="display">Booking message</legend>
+          <div class="field">
+            <label for="a-paste">Paste the WhatsApp message here</label>
+            <textarea id="a-paste" placeholder="Wedding car booking request&#10;Ref: ADY-…"></textarea>
+          </div>
+          <button type="button" class="btn btn-ghost btn-small" id="a-fill">Fill details from message</button>
+          <div class="status" id="a-fillStatus" aria-live="polite"></div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="display">Customer</legend>
+          <div class="row2">
+            <div class="field"><label for="a-ref">Reference</label><input type="text" id="a-ref"></div>
+            <div class="field"><label for="a-issued">Invoice date</label><input type="date" id="a-issued"></div>
+          </div>
+          <div class="field"><label for="a-name">Name</label><input type="text" id="a-name"></div>
+          <div class="row2">
+            <div class="field"><label for="a-phone">Contact number</label><input type="tel" id="a-phone"></div>
+            <div class="field"><label for="a-wa">WhatsApp number</label><input type="tel" id="a-wa"></div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="display">Hire</legend>
+          <div class="field"><label for="a-date">Wedding date</label><input type="date" id="a-date"></div>
+          <div class="row2">
+            <div class="field"><label for="a-from">From</label><input type="time" id="a-from"></div>
+            <div class="field"><label for="a-to">To</label><input type="time" id="a-to"></div>
+          </div>
+          <div class="field">
+            <label for="a-route">Route</label>
+            <p class="hint">One stop per line, in order.</p>
+            <textarea id="a-route"></textarea>
+          </div>
+          <div class="field"><label for="a-vehicle">Vehicle</label><input type="text" id="a-vehicle"></div>
+          <div class="field">
+            <label for="a-deco">Decoration</label>
+            <select id="a-deco"><option value="with">With deco</option><option value="without">Without deco</option></select>
+          </div>
+          <div class="field"><label for="a-notes">Customer notes</label><textarea id="a-notes" style="min-height:70px"></textarea></div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="display">Fee</legend>
+          <div class="row2">
+            <div class="field"><label for="a-total">Total (Rs.)</label><input type="number" id="a-total" inputmode="numeric" min="0" step="500"></div>
+            <div class="field"><label for="a-adv">Advance paid (Rs.)</label><input type="number" id="a-adv" inputmode="numeric" min="0" step="500" value="0"></div>
+          </div>
+          <div class="row2">
+            <div class="field"><label for="a-hr">Extra hour (Rs.)</label><input type="number" id="a-hr" inputmode="numeric" min="0" value="3500"></div>
+            <div class="field"><label for="a-km">Extra km (Rs.)</label><input type="number" id="a-km" inputmode="numeric" min="0" value="350"></div>
+          </div>
+          <div class="money"><span>Balance</span><span id="a-balance">Rs. 0</span></div>
+        </fieldset>
+
+        <div class="actions">
+          <button type="button" class="btn btn-primary" id="a-pdf">Save or share invoice PDF</button>          
+          <button type="button" class="btn btn-ghost" id="a-save">Save booking and add to calendar</button>
+          <a class="btn btn-wa" id="a-send" href="#" target="_blank" rel="noopener">Send confirmation on WhatsApp</a>
+          <div class="status" id="a-status" aria-live="polite"></div>
+          <p class="note">Save the PDF first, then send the confirmation and attach the PDF in the WhatsApp chat. On a phone, “Share” can send the PDF straight to WhatsApp.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="js/config.js"></script>
+<script src="js/helpers.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

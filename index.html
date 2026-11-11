@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ady’s Wedding Car</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="petal-rain" aria-hidden="true"></div>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html"><img src="images/logo.png" alt="" class="logo" onerror="this.remove()"><span>Ady’s Wedding Car</span></a>
+    <nav class="links">
+      <a href="#book" data-i18n="nav_book">Book</a>
+      <a href="#cars" data-i18n="nav_cars">Our cars</a>
+      <a href="#follow" data-i18n="nav_follow">Follow us</a>
+    </nav>
+    <a class="btn btn-primary btn-small head-book" href="#book" data-i18n="head_book">Book now</a>
+    <button class="lang" id="langBtn" type="button" aria-label="Change language">සිංහල</button>
+  </div>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1 class="display" data-i18n="hero_title"> A peaceful ride on your special day..!</h1>
+        <p data-i18n="hero_sub"> Most trusted wedding car partner..!</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="#book" data-i18n="hero_cta">Booking</a>
+          <a class="btn btn-ghost" href="#cars" data-i18n="hero_cta2">Our cars</a>
+        </div>
+      </div>
+      <svg class="ribbon-art" viewBox="0 0 400 280" role="img" aria-label="Wedding ribbon on a car bonnet">
+                <!-- Wedding car (front view) -->
+        <g class="car" aria-hidden="true">
+          <defs>
+            <linearGradient id="car-paint" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" style="stop-color:var(--car-top)"/>
+              <stop offset="1" style="stop-color:var(--car-bottom)"/>
+            </linearGradient>
+            <radialGradient id="car-beam">
+              <stop offset="0" stop-color="#FFF6D8"/>
+              <stop offset="1" stop-color="#FFF6D8" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="car-glass" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#8FA3B8"/>
+              <stop offset="1" stop-color="#26313D"/>
+            </linearGradient>
+            <path id="car-heart" d="M9 17C3 12 0 9 0 5C0 1 3-1 5.5-1C7.2-1 8.4 0 9 1.4C9.6 0 10.8-1 12.5-1C15-1 18 1 18 5C18 9 15 12 9 17Z"/>
+          </defs>
+          <ellipse cx="200" cy="273" rx="190" ry="7" fill="#000" opacity=".22"/>
+          <rect x="38" y="236" width="60" height="40" rx="10" fill="#141416"/>
+          <rect x="302" y="236" width="60" height="40" rx="10" fill="#141416"/>
+          <path d="M84 110 C96 62 120 34 150 32 H250 C280 34 304 62 316 110 Z" fill="url(#car-paint)"/>
+          <path d="M108 106 C118 68 136 46 158 45 H242 C264 46 282 68 292 106 Z" fill="url(#car-glass)"/>
+          <path d="M150 50 H180 L140 102 H116 C122 78 134 58 150 50Z" fill="#FFFFFF" opacity=".14"/>
+          <ellipse cx="70" cy="110" rx="16" ry="9" fill="url(#car-paint)"/>
+          <ellipse cx="330" cy="110" rx="16" ry="9" fill="url(#car-paint)"/>
+          <path d="M42 120 Q62 104 110 104 H290 Q338 104 358 120 L380 150 Q396 164 394 192 L392 234 Q392 246 378 246 H22 Q8 246 8 234 L6 192 Q4 164 20 150 Z" fill="url(#car-paint)"/>
+          <path d="M70 128 Q200 116 330 128" fill="none" stroke="#FFFFFF" stroke-opacity=".12" stroke-width="2"/>
+          <circle cx="54" cy="192" r="26" fill="#16181C"/>
+          <circle cx="54" cy="192" r="19" fill="#DCE6EF"/>
+          <circle cx="54" cy="192" r="8" fill="#FFFFFF"/>
+          <circle cx="346" cy="192" r="26" fill="#16181C"/>
+          <circle cx="346" cy="192" r="19" fill="#DCE6EF"/>
+          <circle cx="346" cy="192" r="8" fill="#FFFFFF"/>
+          <g class="car-glow">
+            <ellipse cx="54" cy="192" rx="56" ry="38" fill="url(#car-beam)"/>
+            <ellipse cx="346" cy="192" rx="56" ry="38" fill="url(#car-beam)"/>
+          </g>
+          <rect x="150" y="208" width="100" height="26" rx="10" fill="#16181C" stroke="#C9CDD3" stroke-width="2"/>
+          <path d="M158 215 H242 M158 221 H242 M158 227 H242" stroke="#5A6068" stroke-width="1.5"/>
+          <rect x="14" y="234" width="372" height="18" rx="9" fill="#2A2E35" stroke="#C9CDD3" stroke-width="1.5"/>
+          <rect x="166" y="238" width="68" height="13" rx="2" fill="#FFFFFF" stroke="#C9CDD3"/>
+          <text x="200" y="247.5" text-anchor="middle" font-family="Georgia, serif" font-size="8" font-style="italic" fill="#C8102E">Just Married</text>
+          <g class="car-hearts" fill="#C8102E">
+            <use href="#car-heart" transform="translate(170 7) scale(1.35)"/>
+            <use href="#car-heart" transform="translate(203 6) scale(1.15)"/>
+          </g>
+        </g>
+        <path class="strand s1 draw" d="M96 104 Q140 152 200 172"/>
+        <path class="strand s1 draw" d="M304 104 Q260 152 200 172"/>
+        <path class="strand s2 draw" d="M96 104 Q140 152 200 172"/>
+        <path class="strand s2 draw" d="M304 104 Q260 152 200 172"/>
+        <path class="edge draw" d="M102 100 Q144 146 200 164"/>
+        <path class="edge draw" d="M298 100 Q256 146 200 164"/>
+        <g>
+          <path d="M200 172 C160 130 128 150 140 176 C150 198 186 184 200 172Z" fill="var(--ribbon)" stroke="var(--ribbon-shade)" stroke-width="3"/>
+          <path d="M200 172 C240 130 272 150 260 176 C250 198 214 184 200 172Z" fill="var(--ribbon)" stroke="var(--ribbon-shade)" stroke-width="3"/>
+          <path d="M196 176 L172 236 L186 230 L192 244 L200 182Z" fill="var(--ribbon)" stroke="var(--ribbon-shade)" stroke-width="3"/>
+          <path d="M204 176 L228 236 L214 230 L208 244 L200 182Z" fill="var(--ribbon)" stroke="var(--ribbon-shade)" stroke-width="3"/>
+                    <!-- Rose bouquet -->
+          <defs>
+            <g id="rose-red">
+              <circle r="10" fill="#C8102E"/>
+              <path d="M-8 1C-8-7 7-9 8-1C9 6 0 9-5 5" fill="none" stroke="#7E0A1C" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M-4 0C-4-5 4-5 4 0C4 3 0 4-2 2" fill="none" stroke="#7E0A1C" stroke-width="1.3" stroke-linecap="round"/>
+              <circle r="1.6" fill="#7E0A1C"/>
+            </g>
+            <g id="rose-white">
+              <circle r="10" fill="#FFFFFF" stroke="#E2D6C8" stroke-width="1"/>
+              <path d="M-8 1C-8-7 7-9 8-1C9 6 0 9-5 5" fill="none" stroke="#CDBFAE" stroke-width="1.5" stroke-linecap="round"/>
+              <path d="M-4 0C-4-5 4-5 4 0C4 3 0 4-2 2" fill="none" stroke="#CDBFAE" stroke-width="1.3" stroke-linecap="round"/>
+              <circle r="1.6" fill="#CDBFAE"/>
+            </g>
+            <g id="rose-leaf">
+              <path d="M0 0C9-8 26-8 36 0C26 8 9 8 0 0Z" fill="#3D7B40"/>
+              <path d="M3 0H31" stroke="#2C5E30" stroke-width="1"/>
+            </g>
+          </defs>
+          <g class="bouquet">
+            <g transform="translate(200 168) scale(1.55)">
+              <use href="#rose-leaf" transform="rotate(150)"/>
+              <use href="#rose-leaf" transform="rotate(200)"/>
+              <use href="#rose-leaf" transform="rotate(30)"/>
+              <use href="#rose-leaf" transform="rotate(-20)"/>
+              <use href="#rose-leaf" transform="rotate(-70)"/>
+              <use href="#rose-leaf" transform="rotate(-110)"/>
+              <use href="#rose-white" transform="translate(0 -27) scale(.9)"/>
+              <use href="#rose-red" transform="translate(-11 -15)"/>
+              <use href="#rose-red" transform="translate(11 -15)"/>
+              <use href="#rose-white" transform="translate(-19 2)"/>
+              <use href="#rose-white" transform="translate(19 2)"/>
+              <use href="#rose-red" transform="translate(0 3) scale(1.15)"/>
+              <g fill="#FFFFFF" stroke="#E2D6C8" stroke-width=".6">
+                <circle cx="-29" cy="-6" r="2"/><circle cx="29" cy="-8" r="2"/>
+                <circle cx="-8" cy="-36" r="1.8"/><circle cx="9" cy="-35" r="1.8"/>
+                <circle cx="-24" cy="-24" r="1.8"/><circle cx="24" cy="-25" r="1.8"/>
+              </g>
+            </g>
+          </g>
+          <!-- Falling petals -->
+          <g class="petals">
+            <ellipse class="petal p1" cx="70"  cy="0" rx="3.2" ry="5" fill="#C8102E"/>
+            <ellipse class="petal p2" cx="150" cy="0" rx="3.2" ry="5" fill="#FFFFFF" stroke="#E2D6C8" stroke-width=".6"/>
+            <ellipse class="petal p3" cx="250" cy="0" rx="3.2" ry="5" fill="#C8102E"/>
+            <ellipse class="petal p4" cx="330" cy="0" rx="3.2" ry="5" fill="#FFFFFF" stroke="#E2D6C8" stroke-width=".6"/>
+            <ellipse class="petal p5" cx="110" cy="0" rx="2.8" ry="4.4" fill="#E0334F"/>
+            <ellipse class="petal p6" cx="290" cy="0" rx="2.8" ry="4.4" fill="#FFFFFF" stroke="#E2D6C8" stroke-width=".6"/>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="wrap">
+      <ol class="steps">
+        <li><span data-i18n="step1">Fill in your booking details</span></li>
+        <li><span data-i18n="step2">Send them to us on WhatsApp</span></li>
+        <li><span data-i18n="step3">Get your confirmation and invoice</span></li>
+      </ol>
+    </div>
+  </div>
+
+  <section id="book" class="closed">
+    <div class="wrap narrow">
+      <h2 class="display" data-i18n="form_title">Book your wedding car</h2>
+      <p class="lede" data-i18n="form_lede">Fill in every detail so we can prepare the right car for you.</p>
+      <div class="invite">
+        <button type="button" class="invite-card" id="inviteOpen" aria-controls="bookingForm">
+          <span class="invite-photo"><img src="images/invite.jpg" alt=""></span>
+          <span class="invite-small" data-i18n="inv_small">You’re invited</span>
+          <span class="invite-title" data-i18n="inv_title">Open your booking</span>
+          <span class="invite-tap" data-i18n="inv_tap">Tap to open</span>
+        </button>
+      </div>
+      <form class="card" id="bookingForm" novalidate>
+        <fieldset>
+          <legend class="display" data-i18n="lg_you">Your details</legend>
+          <div class="field">
+            <label for="f-name" data-i18n="f_name">Your name </label>
+            <input type="text" id="f-name" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="f-phone" data-i18n="f_phone">Contact number</label>
+            <input type="tel" id="f-phone" autocomplete="tel" inputmode="tel" placeholder="07X XXX XXXX" required>
+          </div>
+          <div class="field">
+            <label for="f-wa" data-i18n="f_wa">WhatsApp number</label>
+            <label class="check" style="margin-bottom:8px;font-weight:400">
+              <input type="checkbox" id="f-same" checked> <span data-i18n="f_same">Same as contact number</span>
+            </label>
+            <input type="tel" id="f-wa" inputmode="tel" placeholder="07X XXX XXXX" class="hidden">
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="display" data-i18n="lg_when">Date and time</legend>
+          <div class="field">
+            <label for="f-date" data-i18n="f_date">Wedding date</label>
+            <input type="date" id="f-date" required>
+          </div>
+          <div class="row2">
+            <div class="field">
+              <label for="f-from" data-i18n="f_from">Pick up time</label>
+              <input type="time" id="f-from" required>
+            </div>
+            <div class="field">
+              <label for="f-to" data-i18n="f_to">Finish time</label>
+              <input type="time" id="f-to" required>
+            </div>
+          </div>
+          <div class="duration" id="duration" aria-live="polite"></div>
+        </fieldset>
+
+        <fieldset>
+          <legend class="display" data-i18n="f_route">Full route</legend>
+          <p class="hint" data-i18n="f_route_hint">Add every stop in order, from the first pick up to the last drop off.</p>
+          <ul class="stops" id="stops"></ul>
+          <button type="button" class="btn btn-ghost btn-small add-stop" id="addStop" data-i18n="add_stop">Add a stop</button>
+        </fieldset>
+
+        <fieldset>
+          <legend class="display" data-i18n="lg_car">Car and decoration</legend>
+          <div class="field">
+            <label for="f-vehicle" data-i18n="f_vehicle">Preferred vehicle</label>
+            <select id="f-vehicle" required></select>
+            <p class="hint" style="margin-top:6px"><a href="#cars" data-i18n="f_vehicle_hint">Not sure? See photos of the cars.</a></p>
+          </div>
+          <div class="field">
+            <span class="label" id="deco-label" data-i18n="f_deco">Decoration</span>
+            <div class="seg" role="radiogroup" aria-labelledby="deco-label">
+              <label><input type="radio" name="deco" value="with" checked> <span data-i18n="with_deco">With deco</span></label>
+              <label><input type="radio" name="deco" value="without"> <span data-i18n="without_deco">Without deco</span></label>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-notes" data-i18n="f_notes">Anything else we should know?</label>
+            <textarea id="f-notes" data-i18n-ph="f_notes_ph"></textarea>
+          </div>
+        </fieldset>
+
+        <details class="terms" id="termsBox">
+          <summary data-i18n="terms_title">Booking terms</summary>
+          <ol id="termsList"></ol>
+        </details>
+        <label class="check" style="margin-bottom:18px">
+          <input type="checkbox" id="f-agree"> <span data-i18n="agree">I have read and agree to the booking terms</span>
+        </label>
+
+        <p class="error" id="formError" role="alert"></p>
+        <div class="submit-row">
+          <button type="submit" class="btn btn-primary" data-i18n="submit">Continue to WhatsApp</button>
+        </div>
+      </form>
+
+      <div class="card done hidden" id="doneCard" tabindex="-1">
+        <h2 class="display" data-i18n="done_title">Your booking is ready to send</h2>
+        <div class="note" data-i18n="done_ref">Your reference number</div>
+        <div class="ref" id="refOut"></div>
+        <p data-i18n="done_text">Tap the button to open WhatsApp, then press send. We’ll reply with your confirmation and invoice.</p>
+        <div class="cta-row">
+          <a class="btn btn-wa" id="waLink" href="#" target="_blank" rel="noopener" data-i18n="done_btn">Send on WhatsApp</a>
+          <button class="btn btn-ghost" type="button" id="newBooking" data-i18n="done_new">Start a new booking</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cars">
+    <div class="wrap">
+      <h2 class="display" data-i18n="cars_title">Our cars</h2>
+      <p class="lede" data-i18n="cars_sub">Choose a car for your booking.</p>
+      <div class="cars" id="carList"></div>
+    </div>
+  </section>
+
+<section id="follow">
+  <div class="wrap">
+    <h2 class="display" data-i18n="follow_title">Follow us</h2>
+    <p class="lede" data-i18n="follow_sub">See our latest weddings and decorations.</p>
+  <section id="follow">
+        <div class="social-cards">
+        <a class="social-card tiktok" href="https://www.tiktok.com/@i.am_ady__?_r=1&_t=ZS-9B49DRuXUyz" target="_blank" rel="noopener">
+          <span class="sc-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16 3c.4 2.6 2 4.2 4.5 4.4V11c-1.7 0-3.2-.5-4.5-1.4V16a6 6 0 1 1-6-6c.3 0 .7 0 1 .1v3.7a2.4 2.4 0 1 0 1.5 2.2V3H16z"/></svg>
+            <span class="sc-float" aria-hidden="true">♪</span><span class="sc-float" aria-hidden="true">♫</span>
+          </span>
+          <span class="sc-text">
+            <span class="sc-platform">TikTok</span>
+            <span class="sc-name">Adithya Lakshan</span>
+            <span class="sc-line" data-i18n="sc_tiktok">Watch our wedding videos</span>
+          </span>
+          <span class="sc-btn" data-i18n="sc_follow">Follow</span>
+        </a>
+        <a class="social-card facebook" href="https://www.facebook.com/share/18BV1BxyLw/?mibextid=wwXIfr" target="_blank" rel="noopener">
+          <span class="sc-icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v9h4v-9h3l.5-4h-3.5V8.8c0-.5.3-.8.5-.8z"/></svg>
+            <span class="sc-float" aria-hidden="true">♥</span><span class="sc-float" aria-hidden="true">♥</span>
+          </span>
+          <span class="sc-text">
+            <span class="sc-platform">Facebook</span>
+            <span class="sc-name">Ady’s Wedding Car</span>
+            <span class="sc-line" data-i18n="sc_facebook">See our photos and reviews</span>
+          </span>
+          <span class="sc-btn" data-i18n="sc_follow">Follow</span>
+        </a>
+      </div>
+  </section>
+  </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="foot-road" aria-hidden="true">
+    <span class="foot-car"><svg viewBox="0 0 64 28" width="56" height="25"><path d="M3 20Q3 14 9 13L18 12Q23 5 31 5H44Q50 6 55 12L60 13Q63 14 63 19V22H3Z" fill="#C49A45"/><path d="M21 12Q25 8 31 8H36V12ZM39 8H44Q48 9 52 12H39Z" fill="#2D1F22" opacity=".55"/><circle cx="16" cy="22" r="4.5" fill="#1B1214"/><circle cx="50" cy="22" r="4.5" fill="#1B1214"/><path d="M60 15C57 12 55 14 57 16C58 17 60 16 60 15Z" fill="#FFFFFF"/></svg></span>
+  </div>
+  <div class="wrap foot-grid">
+    <div class="foot-brand">
+      <img src="images/logo.png" alt="" class="foot-logo" onerror="this.remove()">
+      <strong>Ady’s Wedding Car</strong>
+      <p data-i18n="foot_tag">Decorated wedding cars for your special day.</p>
+    </div>
+    <div>
+      <h4 data-i18n="foot_contact">Contact</h4>
+      <p><span data-i18n="foot_call">Call or WhatsApp</span><br><a id="footPhone" href="#"></a></p>
+      <p id="footAddr">Karawitagara, Chilaw</p>
+    </div>
+    <div class="foot-links">
+      <h4 data-i18n="foot_links">Quick links</h4>
+      <a href="#book" data-i18n="nav_book">Book</a>
+      <a href="#cars" data-i18n="nav_cars">Our cars</a>
+      <a href="#follow" data-i18n="nav_follow">Follow us</a>
+    </div>
+    <div>
+      <h4 data-i18n="nav_follow">Follow us</h4>
+      <div class="foot-social">
+        <a href="https://www.tiktok.com/@i.am_ady__?_r=1&_t=ZS-9B49DRuXUyz" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M16 3c.4 2.6 2 4.2 4.5 4.4V11c-1.7 0-3.2-.5-4.5-1.4V16a6 6 0 1 1-6-6c.3 0 .7 0 1 .1v3.7a2.4 2.4 0 1 0 1.5 2.2V3H16z"/></svg></a>
+        <a href="https://www.facebook.com/share/18BV1BxyLw/?mibextid=wwXIfr" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M14 8h3V4h-3c-2.8 0-4.5 1.8-4.5 4.6V11H7v4h2.5v9h4v-9h3l.5-4h-3.5V8.8c0-.5.3-.8.5-.8z"/></svg></a>
+        <a id="footWa" href="#" target="_blank" rel="noopener" aria-label="WhatsApp"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm-3 5.5c.3-.6.6-.6 1-.6h.6c.2 0 .4.2.5.5l.8 1.9c.1.3 0 .5-.1.7l-.6.7c.6 1.2 1.6 2.2 2.8 2.8l.7-.6c.2-.2.5-.2.7-.1l1.9.8c.3.1.5.3.5.6v.6c0 .4-.1.8-.6 1.1-.6.3-1.6.6-3-.1-2.2-1-4-2.8-5-5-.6-1.4-.4-2.4-.2-3z"/></svg></a>
+      </div>
+    </div>
+  </div>
+  <div class="foot-bottom">© <span id="footYear"></span> Ady’s Wedding Car</div>
+</footer>
+
+<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm-3 5.5c.3-.6.6-.6 1-.6h.6c.2 0 .4.2.5.5l.8 1.9c.1.3 0 .5-.1.7l-.6.7c.6 1.2 1.6 2.2 2.8 2.8l.7-.6c.2-.2.5-.2.7-.1l1.9.8c.3.1.5.3.5.6v.6c0 .4-.1.8-.6 1.1-.6.3-1.6.6-3-.1-2.2-1-4-2.8-5-5-.6-1.4-.4-2.4-.2-3z"/></svg>
+  <span class="wa-tip" data-i18n="wa_tip">Chat with us</span>
+</a>
+
+<script src="js/config.js"></script>
+<script src="js/translations.js"></script>
+<script src="js/helpers.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
